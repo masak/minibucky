@@ -1,0 +1,2457 @@
+Wed Dec 21 20:12:57 CET 2005
+-rw-r--r--  1 masak masak  602 2005-12-21 20:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  369 2005-12-21 20:11 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  780 2005-12-21 20:11 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  591 2005-12-21 20:11 ./minibucky/test/TestTurnOrder.java
+
+* Created TestTurnOrder.java, which controls that players alternate correctly
+* Created Board.java, right now containing only who's next
+* Created Player.java
+* Created Test.java as an abstract class for the test classes to inherit from
+* Created Tester.java, a central place from which all the tests are run
+
+Wed Dec 21 20:51:51 CET 2005
+-rw-r--r--  1 masak masak  753 2005-12-21 20:39 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak 1192 2005-12-21 20:44 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  441 2005-12-21 20:38 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1783 2005-12-21 20:44 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  888 2005-12-21 20:47 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  591 2005-12-21 20:11 ./minibucky/test/TestTurnOrder.java
+
+* Created TestInitialPosition.java, which checks that all pieces are in their
+  correct places at the start of the game, and that the middle of the board
+  is empty
+* Augmented Board.java with the two methods that TestInitialPosition needs
+* Added enum class Piece.java
+* Currently, 32 out of 33 tests fail in TestInitialPosition.java
+
+Wed Dec 21 21:05:25 CET 2005
+-rw-r--r--  1 masak masak  753 2005-12-21 20:39 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak 1192 2005-12-21 20:44 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  975 2005-12-21 21:04 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+
+* Improved test reporting a little. Now creates a summary of all tests which
+  did not run as many tests as planned, or which failed tests.
+
+Wed Dec 21 21:15:44 CET 2005
+-rw-r--r--  1 masak masak 1812 2005-12-21 21:14 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak 1192 2005-12-21 20:44 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  975 2005-12-21 21:04 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+
+* Fleshed out the getPieceOn methods in Board.java
+* All tests in TestInitialPosition now pass
+
+Wed Dec 21 21:45:42 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 2028 2005-12-21 21:43 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak 1192 2005-12-21 20:44 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1080 2005-12-21 21:28 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+
+* Created TestJedi.java with rudimentary jedi tests
+* Created BoardGenerator to facilitate creating arbritary boards
+* Added skeleton moveIsLegal method to Board.java
+* Currently, 11 out of 17 tests now fail in TestJedi
+
+Wed Dec 21 22:03:30 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 2517 2005-12-21 22:02 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:01 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1080 2005-12-21 21:28 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+
+* Fleshed out moveIsLegal with rudimentary checks
+* Added convenience method owner in Piece
+* 6 of 17 tests now fail in TestJedi
+
+Wed Dec 21 22:41:09 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 3971 2005-12-21 22:38 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak 1080 2005-12-21 21:28 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+
+* Created Role.java, an enum class for the different roles
+* The method hasRole ended up at Board, since Piece has too little info
+* Created MoveType.java, an enum class for the types of move
+* Refined tests for jedi move legality
+* All tests pass in TestJedi -- but surely more are coming
+
+Wed Dec 21 22:56:41 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 3971 2005-12-21 22:38 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak 1142 2005-12-21 22:55 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 22:55 ./minibucky/test/TestWagon.java
+
+* Created TestWagon.java with wagon tests
+* 4 tests of 7 fail in TestWagon
+
+Wed Dec 21 23:19:39 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 6190 2005-12-21 23:18 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak 1142 2005-12-21 22:55 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added move capabilities for the wagon
+* All tests pass in TestWagon
+
+Wed Dec 21 23:24:25 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 6190 2005-12-21 23:18 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak 1205 2005-12-21 23:23 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestShaman.java with shaman tests
+* 2 out of 5 tests fail in TestShaman
+
+Wed Dec 21 23:35:36 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 6985 2005-12-21 23:35 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak 1205 2005-12-21 23:23 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added move capabilities for the shaman
+* All tests now pass in TestShaman
+
+Wed Dec 21 23:39:14 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 6985 2005-12-21 23:35 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak  823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak 1271 2005-12-21 23:38 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestChameleon.java with chameleon tests
+* All tests pass in TestChameleon (wtf? Don't worry, I haven't implemented
+  mimicking yet)
+
+Wed Dec 21 23:43:46 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 6985 2005-12-21 23:35 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak  823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak 1332 2005-12-21 23:43 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestDude.java with dude tests
+* 3 tests of 5 fail in TestDude
+
+Wed Dec 21 23:54:22 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 7329 2005-12-21 23:54 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak  823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak 1332 2005-12-21 23:43 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added move capabilities for the dude
+* All tests now pass in TestDude
+* Already noticing some strain on the moveIsLegal method. It's large, and
+  small things will break it. Thinking of factoring in another layer
+
+Wed Dec 21 23:59:55 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 7329 2005-12-21 23:54 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1393 2005-12-21 22:11 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak  823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak 1394 2005-12-21 23:58 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestMadam.java with madam tests
+* 5 tests of 8 fail in TestMadam
+
+Thu Dec 22 00:09:03 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 9331 2005-12-22 00:06 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak  823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak 1394 2005-12-21 23:58 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added move capabilities for the madam
+* Fixed positive/negative roles which should be colored
+* All tests now pass in TestMadam
+
+Thu Dec 22 09:50:54 CET 2005
+-rw-r--r--  1 masak masak 2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 9331 2005-12-22 00:06 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak  552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak 1295 2005-12-21 22:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak  432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak 1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak  823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak 1460 2005-12-22 09:38 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak 1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak  895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak 1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak  915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  973 2005-12-22 09:50 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak  810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak  611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak  879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestPromotion.java with promotion tests
+* 5 tests of 9 fail in TestPromotion
+
+Thu Dec 22 10:25:23 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 10697 2005-12-22 10:25 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak  1460 2005-12-22 09:38 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak   973 2005-12-22 09:50 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added promotion capabilities
+* Modified toString method in Piece.java to return one letter
+* Added name method to Piece.java which returns the full name
+* All tests now pass in TestPromotion
+
+Thu Dec 22 10:33:18 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 10697 2005-12-22 10:25 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   552 2005-12-21 22:40 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak  1530 2005-12-22 10:32 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak   973 2005-12-22 09:50 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   852 2005-12-22 10:31 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestTeleportation.java with teleportation tests
+* 2 tests of 4 fail in TestTeleportation
+
+Thu Dec 22 11:34:56 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 15141 2005-12-22 11:34 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak  1653 2005-12-22 11:15 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak   973 2005-12-22 09:50 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Fleshed out makeMove method in Board.java
+* Added teleportation capabilities
+* Added TELEPORTATION to MoveType.java
+* Added rudimentary exception catching to Tester.java -- a test suite is
+  aborted once an exception occurs, but the subsequent ones keep running
+* All tests now pass in TestTeleportation
+
+Thu Dec 22 11:48:28 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 15141 2005-12-22 11:34 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1719 2005-12-22 11:41 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak   973 2005-12-22 09:50 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestEnPassant.java with en passant tests
+* TestEnPassant dies after the third test
+
+Thu Dec 22 11:52:38 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 15382 2005-12-22 11:52 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1719 2005-12-22 11:41 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak   973 2005-12-22 09:50 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Found the bug in Board.java, the contents were not cloned correctly
+* Now fixed
+* 3 out of 6 tests fail in TestEnPassant
+
+Thu Dec 22 12:29:32 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 18435 2005-12-22 12:29 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1729 2005-12-22 12:27 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak   973 2005-12-22 09:50 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Implemented en passant capabilities in Board.java
+* 3 out of 6 tests still fail in TestEnPassant
+
+Thu Dec 22 12:46:36 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 18764 2005-12-22 12:43 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1729 2005-12-22 12:27 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak   973 2005-12-22 09:50 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Fixed minor bug in Board.java that prevented en passant from working
+* All tests now pass in TestEnPassant
+
+Thu Dec 22 12:49:58 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 18764 2005-12-22 12:43 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1729 2005-12-22 12:27 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added missing test to TestPromotion, to make sure that promoting pieces
+  actually change
+* Currently, 1 out of 10 tests in TestPromotion fails
+
+Thu Dec 22 12:56:40 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 20891 2005-12-22 12:56 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1729 2005-12-22 12:27 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Fixed failing test
+* All tests now pass in TestPromotion
+
+Thu Dec 22 15:20:04 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 20891 2005-12-22 12:56 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1790 2005-12-22 15:17 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestBuck.java with tests for bucking
+* Currently, 2 out of 4 tests fail in TestBuck
+
+Thu Dec 22 23:03:42 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 27806 2005-12-22 22:52 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1790 2005-12-22 15:17 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added lots of code in the Board class. That dude sure is one paranoid chap
+* All tests now pass in TestBuck
+
+Thu Dec 22 23:22:10 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 27806 2005-12-22 22:52 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1855 2005-12-22 23:14 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1350 2005-12-22 23:21 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestHypnosis.java with hypnosis tests
+* Currently, 5 out of 5 tests now fail in TestHypnosis
+
+Thu Dec 22 23:49:20 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 29280 2005-12-22 23:49 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1855 2005-12-22 23:14 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added hypnosis capabilities
+* All tests now pass in TestHypnosis
+
+Fri Dec 23 00:21:20 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 29280 2005-12-22 23:49 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  1106 2005-12-23 00:20 ./minibucky/test/TestDoubleHypnosis.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1926 2005-12-23 00:19 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestDoubleHypnosis.java with double hypnosis tests
+* Currently, 4 out of 4 tests now fail in TestDoubleHypnosis
+
+Fri Dec 23 01:39:57 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 34856 2005-12-23 01:39 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  1106 2005-12-23 00:20 ./minibucky/test/TestDoubleHypnosis.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1926 2005-12-23 00:19 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added double hypnosis capabilities
+* Patches to Board now come in 5k chunks
+* All tests now pass in TestDoubleHypnosis
+
+Fri Dec 23 03:43:12 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 34856 2005-12-23 01:39 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  1454 2005-12-23 03:42 ./minibucky/test/TestDoubleHypnosis.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1926 2005-12-23 00:19 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added insane test to TestDoubleHypnosis, as an afterthought
+* Thus, 1 out of 5 tests fails in TestDoubleHypnosis
+
+Fri Dec 23 09:43:19 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 35508 2005-12-23 09:42 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  1454 2005-12-23 03:42 ./minibucky/test/TestDoubleHypnosis.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1926 2005-12-23 00:19 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Covered insane test
+* All tests now pass in TestDoubleHypnosis
+
+Fri Dec 23 09:48:24 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 35508 2005-12-23 09:42 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  1767 2005-12-23 09:48 ./minibucky/test/TestDoubleHypnosis.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1926 2005-12-23 00:19 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Added another test to TestDoubleHypnosis
+* 1 out of 6 tests fails in TestDoubleHypnosis
+
+Fri Dec 23 10:04:04 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 35905 2005-12-23 10:03 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  1767 2005-12-23 09:48 ./minibucky/test/TestDoubleHypnosis.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1926 2005-12-23 00:19 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Covered double hypnosis test
+* All tests now pass in TestDoubleHypnosis
+
+Fri Dec 23 11:38:15 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 35905 2005-12-23 10:03 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  1767 2005-12-23 09:48 ./minibucky/test/TestDoubleHypnosis.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1990 2005-12-23 11:35 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak  1007 2005-12-23 11:36 ./minibucky/test/TestRevenge.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Created TestRevenge.java, testing for correct Vengeful behavior
+* 2 out of 3 test fail in TestRevenge
+
+Sat Dec 24 19:37:17 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 36987 2005-12-24 19:37 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-22 15:19 ./minibucky/test/TestBuck.java
+-rw-r--r--  1 masak masak   823 2005-12-21 23:38 ./minibucky/test/TestChameleon.java
+-rw-r--r--  1 masak masak  1767 2005-12-23 09:48 ./minibucky/test/TestDoubleHypnosis.java
+-rw-r--r--  1 masak masak   801 2005-12-21 23:42 ./minibucky/test/TestDude.java
+-rw-r--r--  1 masak masak   927 2005-12-22 11:47 ./minibucky/test/TestEnPassant.java
+-rw-r--r--  1 masak masak  1990 2005-12-23 11:35 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak  1349 2005-12-22 23:25 ./minibucky/test/TestHypnosis.java
+-rw-r--r--  1 masak masak  1803 2005-12-21 21:03 ./minibucky/test/TestInitialPosition.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak  1239 2005-12-21 21:44 ./minibucky/test/TestJedi.java
+-rw-r--r--  1 masak masak   915 2005-12-21 23:59 ./minibucky/test/TestMadam.java
+-rw-r--r--  1 masak masak  1061 2005-12-22 12:49 ./minibucky/test/TestPromotion.java
+-rw-r--r--  1 masak masak  1007 2005-12-23 11:36 ./minibucky/test/TestRevenge.java
+-rw-r--r--  1 masak masak   810 2005-12-21 23:23 ./minibucky/test/TestShaman.java
+-rw-r--r--  1 masak masak   861 2005-12-22 11:28 ./minibucky/test/TestTeleportation.java
+-rw-r--r--  1 masak masak   611 2005-12-21 21:03 ./minibucky/test/TestTurnOrder.java
+-rw-r--r--  1 masak masak   879 2005-12-21 23:19 ./minibucky/test/TestWagon.java
+
+* Covered behavior for vengefulness
+* All tests now pass in TestRevenge
+
+Sat Dec 24 20:04:55 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 36987 2005-12-24 19:37 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 20:03 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 20:00 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2060 2005-12-24 20:01 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Renamed all tests to have "Test" at the end instead of at the beginning,
+  parallel to Exceptions
+* Created ChameleonJediTest.java, testing for mimicked jedi moves
+* 11 out of 18 test fail in ChameleonJediTest
+
+Sat Dec 24 22:13:08 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38690 2005-12-24 22:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1321 2005-12-24 20:29 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2060 2005-12-24 20:01 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Implemented jedi role mimicking
+* All tests now work in ChameleonJediTest
+* Expecting a lot of the other mimicking tests to work right away
+
+Sat Dec 24 22:21:14 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38690 2005-12-24 22:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1321 2005-12-24 20:29 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2131 2005-12-24 22:17 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonWagonTest.java, testing for mimicked wagon moves
+* All tests work right away
+
+Sat Dec 24 22:59:47 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38690 2005-12-24 22:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2203 2005-12-24 22:58 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonShamanTest.java, testing for mimicked shaman moves
+* All tests work right away
+
+Sat Dec 24 23:10:58 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38690 2005-12-24 22:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2278 2005-12-24 23:05 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonChameleonTest.java, testing for mimicked chameleon moves
+* All tests work right away
+
+Sat Dec 24 23:19:06 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38690 2005-12-24 22:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2348 2005-12-24 23:12 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonDudeTest.java, testing for mimicked dude moves
+* All tests work right away
+
+Sat Dec 24 23:23:49 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38690 2005-12-24 22:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2419 2005-12-24 23:21 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonMadamTest.java, testing for mimicked madam moves
+* All tests work right away
+
+Sat Dec 24 23:48:52 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38690 2005-12-24 22:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2494 2005-12-24 23:25 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonPromotionTest.java, testing for mimicked promotions
+* All tests work right away
+
+Sun Dec 25 00:03:49 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38690 2005-12-24 22:07 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:02 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2573 2005-12-24 23:51 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonTeleportationTest.java, testing for mimicked teleportations
+* After second test it throws an exception
+* At least I've figured out why
+
+Sun Dec 25 00:08:15 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38722 2005-12-25 00:06 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:02 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2573 2005-12-24 23:51 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Fixed role assignment in hasRole in Board
+* Now ChameleonTeleportationTest throws an exception after the third test
+
+Sun Dec 25 00:13:59 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38722 2005-12-25 00:06 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2573 2005-12-24 23:51 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Corrected the tests in ChameleonTeleportationTest
+* All tests now pass
+
+Sun Dec 25 00:21:54 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38722 2005-12-25 00:06 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2648 2005-12-25 00:15 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonEnPassantTest.java, testing for mimicked en passants
+* All tests work right away
+
+Sun Dec 25 00:29:57 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 38722 2005-12-25 00:06 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2722 2005-12-25 00:23 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonHypnosisTest.java, testing for mimicked hypnosis
+* Currently, 1 test out of 5 fails in ChameleonHypnosisTest
+
+Sun Dec 25 00:50:18 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 40402 2005-12-25 00:50 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2722 2005-12-25 00:23 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Added some functionality to cope for inherited hypnosis
+* All tests now pass in ChameleonHypnosisTest
+
+Sun Dec 25 15:12:27 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 40402 2005-12-25 00:50 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2802 2005-12-25 15:05 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonDoubleHypnosisTest.java, testing for mimicked double
+  hypnosis
+* Currently, 3 test out of 4 fail in ChameleonDoubleHypnosisTest
+
+Sun Dec 25 15:22:29 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 42261 2005-12-25 15:22 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2802 2005-12-25 15:05 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Added functionality for inherited double hypnosis
+* All tests now pass in ChameleonDoubleHypnosisTest
+
+Sun Dec 25 15:59:02 CET 2005
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 42216 2005-12-25 15:33 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2875 2005-12-25 15:23 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created ChameleonRevengeTest.java, testing for mimicked vengefulness
+* Fixed minor bug in moveIsLegal in Board
+* All tests now pass in ChameleonRevengeTest
+
+Sun Dec 25 19:42:29 CET 2005
+-rw-r--r--  1 masak masak   942 2005-12-25 19:41 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 42216 2005-12-25 15:33 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2875 2005-12-25 15:23 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Created Client.java, a rudimentary CLI for playing Bucky
+
+Sun Dec 25 20:18:48 CET 2005
+-rw-r--r--  1 masak masak   951 2005-12-25 19:53 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 42810 2005-12-25 20:18 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2875 2005-12-25 15:23 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Changed Board and Client to play better together
+
+Wed Dec 28 11:25:49 CET 2005
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 51138 2005-12-26 23:53 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Made Client and Board work together even more
+* Fleshed out possibleMoves method in Board
+* Added JediBlockingTest.java which tests jedi moves whose intermediate
+  positions are blocked
+* Currently, 3 out of 3 tests fail in JediBlockingTest
+
+Wed Dec 28 20:33:28 CET 2005
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 52665 2005-12-28 20:32 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Added jedi blocking capabilities in Board
+* All tests now pass in JediBlockingTest
+
+Thu Dec 29 17:51:03 CET 2005
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1344 2005-12-29 17:39 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 51503 2005-12-29 17:38 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Found bug in possibleMoves in Board
+* Playing against computer now works
+* Chameleon taking moves don't work correctly
+
+Thu Dec 29 18:02:32 CET 2005
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1344 2005-12-29 17:39 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 51504 2005-12-29 18:02 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-24 23:23 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+' Fixed a few bugs in intermediatePositions in Board
+* All tests now pass again
+
+Thu Dec 29 18:11:24 CET 2005
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1344 2005-12-29 17:39 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 51504 2005-12-29 18:02 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak  1285 2005-12-29 18:10 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Added new test to ChameleonMadamTest
+* 1 test out of 9 fails in ChameleonMadamTest
+
+Thu Dec 29 18:19:37 CET 2005
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1344 2005-12-29 17:39 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 51504 2005-12-29 18:02 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Removed test again, because it shouldn't pass
+* All tests now pass
+
+Tue Jan  3 22:26:19 CET 2006
+-rw-r--r--  1 masak masak  2000 2006-01-03 22:26 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1844 2006-01-03 22:22 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 51502 2006-01-03 22:25 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1449 2005-12-25 15:12 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1457 2005-12-24 23:48 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1767 2005-12-24 19:57 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1803 2005-12-24 19:58 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1061 2005-12-24 19:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Added new package ai and Score.java, which computes a numeric score from a
+  board position
+* Adapted ComputerPlayer to find the move yielding the lowest (best for black)
+  score
+* Made two methods public in Board: isHypnotized and isThreatened
+
+Tue Jan  3 22:33:29 CET 2006
+-rw-r--r--  1 masak masak  1988 2006-01-03 22:33 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1844 2006-01-03 22:28 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 51490 2006-01-03 22:33 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1454 2006-01-03 22:33 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1758 2006-01-03 22:32 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1058 2006-01-03 22:32 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Renamed all occurrences of getPieceOn, declared in Board, to pieceAt
+
+Tue Jan  3 23:18:59 CET 2006
+-rw-r--r--  1 masak masak  1988 2006-01-03 22:33 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1844 2006-01-03 22:28 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54431 2006-01-03 23:14 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1892 2006-01-03 23:17 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1758 2006-01-03 22:32 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1058 2006-01-03 22:32 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  2944 2005-12-28 11:22 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Finished fleshing out method possibleMoves in Board
+* Added a few tests to ChameleonPromotionTest
+* 2 tests out of 15 now fail in ChameleonPromotionTest
+
+Tue Jan  3 23:26:52 CET 2006
+-rw-r--r--  1 masak masak  1988 2006-01-03 22:33 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1844 2006-01-03 22:28 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54431 2006-01-03 23:14 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:23 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1758 2006-01-03 22:32 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1058 2006-01-03 22:32 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Removed false negative in ChameleonPromotionTest
+* Added back test exception catching in Tester (it now prints the stack trace)
+* Made the plural 's' in 'tests' disappear in case only one test failed
+
+Tue Jan  3 23:37:06 CET 2006
+-rw-r--r--  1 masak masak  1988 2006-01-03 22:33 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1844 2006-01-03 22:28 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54451 2006-01-03 23:32 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1758 2006-01-03 22:32 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1058 2006-01-03 22:32 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Fixed promotion-related bug in Board
+* All tests now pass
+
+Tue Jan  3 23:41:15 CET 2006
+-rw-r--r--  1 masak masak  1988 2006-01-03 22:33 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1844 2006-01-03 22:28 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54687 2006-01-03 23:41 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1758 2006-01-03 22:32 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1058 2006-01-03 22:32 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Modified possibleMoves in Board due to a ConcurrentModificationException that
+  it generated when trying to add to an ArrayList which was being traversed
+
+Tue Jan  3 23:59:51 CET 2006
+-rw-r--r--  1 masak masak  1988 2006-01-03 22:33 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1844 2006-01-03 22:28 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54687 2006-01-03 23:41 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1758 2006-01-03 22:32 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Added two new tests in Promotion about promotion and smashing
+* 2 tests out of 12 now fail in Promotion
+
+Wed Jan  4 00:12:16 CET 2006
+-rw-r--r--  1 masak masak  1988 2006-01-03 22:33 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1844 2006-01-03 22:28 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54833 2006-01-04 00:12 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1758 2006-01-03 22:32 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Refined criteria for promotion in Board
+* Refactored whether a movement is promoting into a boolean method
+  movementIsPromoting
+* All tests now pass
+
+Wed Jan  4 01:44:13 CET 2006
+-rw-r--r--  1 masak masak  1980 2006-01-04 01:03 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1212 2006-01-04 01:08 ./minibucky/ai/TreeSearch.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1965 2006-01-04 01:08 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54845 2006-01-04 00:14 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  1758 2006-01-03 22:32 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Added simple tree search functionality to the computer player
+
+Wed Jan  4 11:42:05 CET 2006
+-rw-r--r--  1 masak masak  1980 2006-01-04 01:03 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1212 2006-01-04 01:08 ./minibucky/ai/TreeSearch.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1965 2006-01-04 01:47 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54845 2006-01-04 00:14 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  2121 2006-01-04 11:41 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Found inconsistency about double hypnosis when shamans are standing next to
+  each other
+* Posted test about it in DoubleHypnosisTest.java
+* 1 out of 7 tests now fails in DoubleHypnosisTest
+
+Wed Jan  4 15:21:05 CET 2006
+-rw-r--r--  1 masak masak  1980 2006-01-04 01:03 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1212 2006-01-04 01:08 ./minibucky/ai/TreeSearch.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1965 2006-01-04 01:47 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54611 2006-01-04 15:20 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  2121 2006-01-04 11:41 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1239 2005-12-24 19:59 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Removed some cruft in Board. Who writes these things?
+* All tests now pass
+
+Wed Jan  4 15:45:22 CET 2006
+-rw-r--r--  1 masak masak  1980 2006-01-04 01:03 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1212 2006-01-04 01:08 ./minibucky/ai/TreeSearch.java
+-rw-r--r--  1 masak masak  1178 2005-12-26 23:47 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1965 2006-01-04 01:47 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 54611 2006-01-04 15:20 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  2121 2006-01-04 11:41 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1553 2006-01-04 15:41 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Added test where a jedi takes one of his own
+* Currently one test fails in JediTest
+
+Thu Jan  5 20:36:17 CET 2006
+-rw-r--r--  1 masak masak  1980 2006-01-05 14:17 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1212 2006-01-04 01:08 ./minibucky/ai/TreeSearch.java
+-rw-r--r--  1 masak masak  1190 2006-01-05 20:36 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  1977 2006-01-05 20:35 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 67952 2006-01-05 20:32 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  2121 2006-01-04 11:41 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1553 2006-01-04 15:41 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Changed the piece weights a little in Score
+* Added method whyIsMoveIllegal in Board to provide intelligent diagnostics
+* Changed Client and ComputerPlayer to call whyIsMoveIllegal
+* Renamed the variable result in some methods in Board into sandbox
+
+Thu Jan  5 21:58:59 CET 2006
+-rw-r--r--  1 masak masak  1980 2006-01-05 14:17 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1783 2006-01-05 21:08 ./minibucky/ai/TreeSearch.java
+-rw-r--r--  1 masak masak  1190 2006-01-05 20:36 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  2002 2006-01-05 21:54 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 67390 2006-01-05 21:50 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  2121 2006-01-04 11:41 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1553 2006-01-04 15:41 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Various optimizations: Board now caches the latest evaluated Board from
+  isMoveLegal for possible use in MakeMove, thus eliminating some duplicate
+  code
+* lookahead in TreeSearch stops searching the current branch if it finds a
+  reply which is better than the best reply for the best move so far
+
+Thu Jan  5 22:31:37 CET 2006
+-rw-r--r--  1 masak masak  1980 2006-01-05 14:17 ./minibucky/ai/Score.java
+-rw-r--r--  1 masak masak  1783 2006-01-05 21:08 ./minibucky/ai/TreeSearch.java
+-rw-r--r--  1 masak masak  1190 2006-01-05 20:36 ./minibucky/cli/Client.java
+-rw-r--r--  1 masak masak  2002 2006-01-05 21:54 ./minibucky/cli/ComputerPlayer.java
+-rw-r--r--  1 masak masak  2245 2005-12-21 21:41 ./minibucky/state/BoardGenerator.java
+-rw-r--r--  1 masak masak 67901 2006-01-05 22:31 ./minibucky/state/Board.java
+-rw-r--r--  1 masak masak   676 2005-12-22 10:35 ./minibucky/state/MoveType.java
+-rw-r--r--  1 masak masak  1549 2005-12-22 10:23 ./minibucky/state/Piece.java
+-rw-r--r--  1 masak masak   432 2005-12-21 19:43 ./minibucky/state/Player.java
+-rw-r--r--  1 masak masak  1556 2005-12-22 00:08 ./minibucky/state/Role.java
+-rw-r--r--  1 masak masak   751 2005-12-24 19:57 ./minibucky/test/BuckTest.java
+-rw-r--r--  1 masak masak  1189 2005-12-24 23:10 ./minibucky/test/ChameleonChameleonTest.java
+-rw-r--r--  1 masak masak  1440 2006-01-03 22:33 ./minibucky/test/ChameleonDoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   855 2005-12-24 23:18 ./minibucky/test/ChameleonDudeTest.java
+-rw-r--r--  1 masak masak  1394 2005-12-25 00:21 ./minibucky/test/ChameleonEnPassantTest.java
+-rw-r--r--  1 masak masak  1430 2005-12-25 00:29 ./minibucky/test/ChameleonHypnosisTest.java
+-rw-r--r--  1 masak masak  1328 2005-12-24 22:11 ./minibucky/test/ChameleonJediTest.java
+-rw-r--r--  1 masak masak   972 2005-12-29 18:19 ./minibucky/test/ChameleonMadamTest.java
+-rw-r--r--  1 masak masak  1893 2006-01-03 23:36 ./minibucky/test/ChameleonPromotionTest.java
+-rw-r--r--  1 masak masak  1059 2005-12-25 15:58 ./minibucky/test/ChameleonRevengeTest.java
+-rw-r--r--  1 masak masak   745 2005-12-24 22:57 ./minibucky/test/ChameleonShamanTest.java
+-rw-r--r--  1 masak masak   937 2005-12-25 00:13 ./minibucky/test/ChameleonTeleportationTest.java
+-rw-r--r--  1 masak masak   823 2005-12-24 19:57 ./minibucky/test/ChameleonTest.java
+-rw-r--r--  1 masak masak   935 2005-12-24 22:20 ./minibucky/test/ChameleonWagonTest.java
+-rw-r--r--  1 masak masak  2121 2006-01-04 11:41 ./minibucky/test/DoubleHypnosisTest.java
+-rw-r--r--  1 masak masak   801 2005-12-24 19:58 ./minibucky/test/DudeTest.java
+-rw-r--r--  1 masak masak   927 2005-12-24 19:58 ./minibucky/test/EnPassantTest.java
+-rw-r--r--  1 masak masak  1349 2005-12-24 19:58 ./minibucky/test/HypnosisTest.java
+-rw-r--r--  1 masak masak  1746 2006-01-03 22:32 ./minibucky/test/InitialPositionTest.java
+-rw-r--r--  1 masak masak  1094 2005-12-28 11:24 ./minibucky/test/JediBlockingTest.java
+-rw-r--r--  1 masak masak  1553 2006-01-04 15:41 ./minibucky/test/JediTest.java
+-rw-r--r--  1 masak masak   915 2005-12-24 19:59 ./minibucky/test/MadamTest.java
+-rw-r--r--  1 masak masak  1410 2006-01-03 23:59 ./minibucky/test/PromotionTest.java
+-rw-r--r--  1 masak masak  1007 2005-12-24 22:53 ./minibucky/test/RevengeTest.java
+-rw-r--r--  1 masak masak   810 2005-12-24 20:00 ./minibucky/test/ShamanTest.java
+-rw-r--r--  1 masak masak   861 2005-12-24 20:00 ./minibucky/test/TeleportationTest.java
+-rw-r--r--  1 masak masak  3033 2006-01-03 23:26 ./minibucky/test/Tester.java
+-rw-r--r--  1 masak masak   895 2005-12-21 21:02 ./minibucky/test/Test.java
+-rw-r--r--  1 masak masak   611 2005-12-24 20:01 ./minibucky/test/TurnOrderTest.java
+-rw-r--r--  1 masak masak   879 2005-12-24 20:03 ./minibucky/test/WagonTest.java
+
+* Made it illegal to take one of one's own pieces
+* All tests now pass in JediTest
